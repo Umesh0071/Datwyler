@@ -1,0 +1,130 @@
+
+	@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+	.wrapper{
+		margin: 80px auto 0px auto;
+		width: 1024px;
+		overflow: hidden;
+	}
+	h2{
+		  color: #212121;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+		padding: 0px;
+	}
+	.tabbing{
+	background: #fff none repeat scroll 0 0 padding-box;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    position: relative;
+    width: 100%;
+	}
+	.lstRecommendedProductCarousel{
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+	}
+	.lstRecommendedProductCarousel li{
+		float: left;
+	}
+	.lstRecommendedProductCarousel li a{
+		display: block;
+		text-align: center;
+		padding: 10px 0px;
+		outline: none;
+		text-decoration: none;
+		color: #000;
+		text-transform: capitalize;
+		border-color: #eee;
+		border-style: solid;
+		border-width: 0px 1px 0px 0px;
+		overflow: hidden;
+	}
+	.lstRecommendedProductCarousel li a:hover > img{
+		transform: scale(1.1);
+	}
+	.lstRecommendedProductCarousel li a > img{
+		width: 200px;
+		transition: all 0.2s ease-in-out 0s;
+	}
+	.lstRecommendedProductCarousel li a > span:nth-child(2){
+		display: block;
+		margin: 5px 0px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-size: 13px;
+		padding: 0px 5px;
+	}
+	.lstRecommendedProductCarousel li a > span:nth-child(3){
+		font-size: 12px;
+	}
+	.lstRecommendedProductCarousel li a > span:nth-child(3) > span{
+		font-weight: 600;
+		font-size: 13px;
+	}
+	body,html{
+		padding: 0px;
+		margin: 0px;
+		overflow-x: hidden;
+		background-color: #EFF7FA;
+		color: #fff;
+		font:400 14px "Roboto",Arial,Helvetica,sans-serif
+	}
+	button.slick-arrow {
+    background: #24a3b5 none repeat scroll 0 0;
+    border: medium none;
+    bottom: 0;
+    height: 70px;
+    margin: auto 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100px;
+    top: 0;
+    transition: all 0.2s ease-in-out 0s;
+    width: 36px;
+    z-index: 4;
+		color: #fff;
+}
+	button.slick-arrow:hover {
+		background-color: #000;
+	}
+	.slick-disabled{
+		display: none;
+	}
+	.slick-prev{
+		background-image: url(../src/icon_prev.png) !important;
+		background-repeat: no-repeat !important;
+		width: 35px !important;
+		background-position: 12px center !important;
+		left: 0px !important;
+		top: 50px !important;
+	}
+	.slick-prev::before{
+		content: '' !important;
+	}
+	.slick-next{
+		background-image: url(../src/icon_next.png) !important;
+		background-repeat: no-repeat !important;
+		width: 60px !important;
+		background-position: 12px center !important;
+		top: 50px !important;
+	}
+	.slick-next::before{
+		content: '' !important;
+	}
+
+
+@media (max-width: 767px)
+{
+
+	.wrapper{
+		width: 95%;
+	}
+}
